@@ -7,10 +7,40 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        exo: ['"Exo 2"', "sans-serif"],
+        outfit: ['"Outfit"', "sans-serif"],
+        Montserrat: ['"Montserrat"', "sans-serif"],
+      },
+      animation: {
+        backtoTop: "backtoTop 2s linear infinite",
+        postionImg: "postionImg 3s linear infinite",
+      },
+      keyframes: {
+        backtoTop: {
+          "0%": {
+            transform: "translatey(0) scale(.998)",
+          },
+
+          "50%": {
+            transform: " translatey(-7px) scale(1.1023)",
+          },
+          "100%": {
+            transform: "translatey(0) scale(.998)",
+          },
+        },
+        postionImg: {
+          "0%": {
+            transform: "rotatey(0)",
+          },
+
+          "50%": {
+            transform: "rotate(25deg)",
+          },
+          "100%": {
+            transform: "rotatey(0)",
+          },
+        },
       },
     },
   },
